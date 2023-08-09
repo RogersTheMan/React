@@ -1,7 +1,11 @@
 import React from "react"
 import style from "./relogio.module.scss"
 
-export default function Relogio(){
+interface Props{
+  tempo: number
+}
+
+export default function Relogio({ tempo }){
   return(
     < React.Fragment>
       <span className={style.relogioNumero}>0</span>
